@@ -1,31 +1,31 @@
-.legend{
+.legend {
   display: inline-flex;
   margin-top: 20px;
   column-gap: 45px;
 }
-.free-seat{
+.free-seat {
   cursor: pointer;
 }
-.title{
+.title {
   text-align: center;
 }
-.movie-seats{
+.movie-seats {
   text-align: center;
 }
-.select-seat-icon{
-  color:rgb(19, 169, 19);
+.select-seat-icon {
+  color: rgb(19, 169, 19);
 }
-.taken-seat-icon{
-  color:rgb(72, 72, 237);
+.taken-seat-icon {
+  color: rgb(72, 72, 237);
 }
-.vip-seat-icon{
-  color:gray;
+.vip-seat-icon {
+  color: gray;
   cursor: not-allowed;
 }
-.error-message{
+.error-message {
   color: red;
 }
-.error-container{
+.error-container {
   margin-top: 20px;
   text-align: center;
 }

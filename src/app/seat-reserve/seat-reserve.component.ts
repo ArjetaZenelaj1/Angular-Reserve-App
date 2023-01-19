@@ -74,7 +74,7 @@ export class SeatReserveComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ConfirmDialogComponent, {
-      data: {selected: this.selected},
+      data: { selected: this.selected },
     });
 
     dialogRef.afterClosed().subscribe(result => {

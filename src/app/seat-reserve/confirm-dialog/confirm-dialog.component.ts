@@ -12,7 +12,7 @@ export class ConfirmDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<ConfirmDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any,
-    private router:Router
+    private router: Router
   ) { }
 
   form = {
@@ -23,7 +23,7 @@ export class ConfirmDialogComponent {
   onNoClick(): void {
     this.dialogRef.close();
   }
-  onSubmit(){
+  onSubmit() {
     this.dialogRef.close();
     this.router.navigate(['/success-page'])
   }

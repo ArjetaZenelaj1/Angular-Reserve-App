@@ -5,10 +5,10 @@ import { SeatReserveComponent } from './seat-reserve/seat-reserve.component';
 import { SuccessPageComponent } from './success-page/success-page.component';
 
 const routes: Routes = [
-  { path: 'login', component: LoginComponent},
-  { path: 'reserve', component: SeatReserveComponent},
+  { path: 'login', component: LoginComponent },
+  { path: 'reserve', component: SeatReserveComponent },
   { path: 'success-page', component: SuccessPageComponent },
-  { path: '',   redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '/login', pathMatch: 'full' },
 ];
 
 @NgModule({

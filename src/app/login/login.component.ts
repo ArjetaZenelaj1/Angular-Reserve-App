@@ -27,7 +27,6 @@ export class LoginComponent implements OnInit {
   }
   onSubmit() {
     this.counter++;
-    console.log(this.counter)
     if (this.counter >= 3) {
       this.displayOTP = false
       this.f['mobile'].setValue('');
