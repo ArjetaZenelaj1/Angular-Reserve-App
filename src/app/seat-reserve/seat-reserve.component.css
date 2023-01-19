@@ -1,0 +1,31 @@
+.legend{
+  display: inline-flex;
+  margin-top: 20px;
+  column-gap: 45px;
+}
+.free-seat{
+  cursor: pointer;
+}
+.title{
+  text-align: center;
+}
+.movie-seats{
+  text-align: center;
+}
+.select-seat-icon{
+  color:rgb(19, 169, 19);
+}
+.taken-seat-icon{
+  color:rgb(72, 72, 237);
+}
+.vip-seat-icon{
+  color:gray;
+  cursor: not-allowed;
+}
+.error-message{
+  color: red;
+}
+.error-container{
+  margin-top: 20px;
+  text-align: center;
+}

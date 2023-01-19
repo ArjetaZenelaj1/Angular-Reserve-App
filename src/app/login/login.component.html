@@ -1,0 +1,37 @@
+<div class="login-container" >
+  <h1 >Login</h1>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-container" ><span>Enter your 10 digits mobile number to recieve
+        OTP</span>
+      <div class="form-group">
+        <mat-form-field>
+          <mat-label>Number</mat-label>
+          <input matInput type="number" class="form-control" name="number" formControlName="mobile" />
+        </mat-form-field>
+      </div>
+
+      <div *ngIf="f['mobile'].touched && f['mobile'].invalid" class="alert alert-danger">
+        <div *ngIf="f['mobile'].errors?.['required']">Please enter mobile number</div>
+        <div *ngIf="f['mobile'].errors?.['pattern']">Mobile number is not 10 digit</div>
+      </div>
+
+      <div *ngIf="f['mobile'].valid">
+        <button mat-raised-button color="accent" (click)="sendOTP()" type="button">Send OTP</button>
+      </div>
+      <div *ngIf="displayOTP">
+        <div class="form-group">
+          <mat-form-field>
+            <mat-label>OTP</mat-label>
+            <input matInput type="number" class="form-control" name="number" formControlName="OTP" />
+          </mat-form-field>
+          <div *ngIf="f['OTP'].errors?.['pattern']">Mobile number is not 10 digit</div>
+        </div>
+        <div>
+          <span *ngIf="!f['OTP'].valid" class="otp-error">*OTP should be 4 digits and should should start with 1</span>
+          <br>
+          <button mat-raised-button color="primary" mat-button type="submit" style="margin-top: 20px;">Ok</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div>

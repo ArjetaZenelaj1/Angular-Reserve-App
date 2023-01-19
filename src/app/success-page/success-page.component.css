@@ -1,0 +1,12 @@
+.successful {
+  width: 400px;
+  height: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.home-button{
+  text-decoration: underline;
+  background: none;
+  border: none;
+  color: blueviolet;
+}
